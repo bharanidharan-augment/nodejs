@@ -1,8 +1,9 @@
-var express = require('express');
-var app = express();
 
-app.get('/', function(req, res){
-   res.send("Hello, it's node js express server working");
-});
+var http = require('http');
 
-app.listen(3000);
+http.createServer(function (req, res) {
+      res.writeHead(200, {'Content-Type': 'text/html'});
+      res.write('Hello World!');
+      res.end();
+   }).listen(8080);
+   
