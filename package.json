@@ -1,15 +1,11 @@
 {
-  "dependencies": {
-    "express": "^4.19.2",
-    "mysql": "^2.18.1"
-  },
-  "name": "sample-nodejs",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "nodejs-express-on-aws-ec2",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "build": "npm run build"
   },
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "4.17.1"
+  }
 }
